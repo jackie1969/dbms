@@ -1,0 +1,22 @@
+{
+  "name": "feedback",
+  "version": "1.0.0",
+  "description": "Student-Staff Feedback portal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jackie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "pug": "^2.0.3"
+  }
+}
