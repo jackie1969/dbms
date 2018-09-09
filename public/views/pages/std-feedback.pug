@@ -1,0 +1,32 @@
+html(ng-app="myFeed")
+  head
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    script(type= 'text/javascript', src= 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js')
+    script(src="/app.js")
+    script(src="/controllers/feedback-contrl.js")
+    style.
+      .container{
+      width: 300px;
+      }
+      .display-4{
+      text-align: center;
+      }
+  body
+    h1.display-4 Feedback Form
+    br
+    .container
+      form(ng-controller="staff-dash-ctrl")
+        .form-group
+          label(for='std_feed_sub') Select Subject
+          select#std_feed_sub.form-control(required='')
+            option Computer Network
+            option Software Engineering
+            // List of reigstered subjects will be display for selection from database
+        .form-group
+          label(for='std_feed_staff') Select Staff
+          select#std_feed_staff.form-control(required='')
+            option Ashwin
+            option Suraj
+            // List of concerned staffs will be display for selection from database
+        button.btn.btn-primary(ng-click="feedback_ques()") Submit

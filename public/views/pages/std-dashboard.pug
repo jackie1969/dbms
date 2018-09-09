@@ -1,0 +1,51 @@
+html
+  head
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    style.
+      .display-4{
+      text-align: center;
+      }
+      .table{
+      width: 500px;
+      }
+      .container{
+      width: 500px;
+      }
+      .body{
+      padding-top: 70px;
+      }
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Profile
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='std-feedback')
+            | Give Feedback
+            span.sr-only
+    .container
+      h1.display-4 Profile
+      br
+      table.table.table-borderless
+        tbody
+          tr
+            th Name
+            td Vikram
+          tr
+            th Registration Number
+            td 17bce4098
+          tr
+            th Email Address
+            td test@test.com
+          tr
+            th Date Of Birth
+            td 15-09-1999
+          tr
+            th Branch
+            td CSE
+          tr
+            th Semester
+            td 2

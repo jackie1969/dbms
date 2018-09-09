@@ -1,0 +1,52 @@
+html
+  head
+    style.
+      .container{
+      width: 300px;
+      }
+      .display-4{
+      text-align: center;
+      }
+  body
+    h1.display-4 Staff Registration
+    br
+    .container
+      form
+        .form-group
+          label(for='staff_name') Name
+          input#staff_name.form-control(type='text', required='')
+        .form-group
+          label(for='staff_id') Staff Id
+          input#staff_id.form-control(type='text', required='')
+        .form-group
+          label(for='staff_email') Email Address
+          input#staff_email.form-control(type='email', required='')
+        .form-group
+          label(for='staff_password') Password
+          input#staff_password.form-control(type='password', required='')
+        .form-group
+          label(for='staff_phno') Phone Number
+          input#staff_phno.form-control(type='text')
+        .form-group
+          label(for='staff_branch') Branch
+          select#staff_branch.form-control
+            option CSE
+            option MECH
+            option CIV
+            option IT
+        .form-group
+          label(for='staff_sem') Semester
+          select#staff_semester.form-control(required='')
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+            option 6
+        .form-group
+          label(for='staff_sub') Subjects
+          select#staff_sub.form-control(required='')
+            option Computer Network
+            option Software Engineering
+            // Subjects list will appeared from database based on semester selected
+        button.btn.btn-primary(type='submit') Register

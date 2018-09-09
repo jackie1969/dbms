@@ -1,0 +1,23 @@
+html
+  head
+    style.
+      .container{
+      width: 300px;
+      }
+      .display-4{
+      text-align: center;
+      }
+  body
+    h1.display-4 Staff Login
+    br
+    .container
+      form
+        .form-group
+          label(for='staff_id') Staff Id
+          input#staff_id.form-control(type='text')
+        .form-group
+          label(for='staff_password') Password
+          input#staff_password.form-control(type='password')
+        button.btn.btn-primary(ng-click='staff_login()') Login
+        a(ui-sref='staff-reg')
+          |   Register

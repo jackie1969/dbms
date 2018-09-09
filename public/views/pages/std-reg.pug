@@ -1,0 +1,50 @@
+html
+  head
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    style.
+      .container{
+      width: 300px;
+      }
+      .display-4{
+      text-align: center;
+      }
+  body
+    h1.display-4 Student Registration
+    br
+    .container
+      form
+        .form-group
+          label(for='std_name') Name
+          input#std_name.form-control(type='text', required='')
+        .form-group
+          label(for='std_regno') Registertion Number
+          input#std_regno.form-control(type='text', required='')
+        .form-group
+          label(for='std_email') Email Address
+          input#std_email.form-control(type='email', required='')
+        .form-group
+          label(for='std_password') Password
+          input#std_password.form-control(type='password', required='')
+        .form-group
+          label(for='std_dob') Date Of Birth
+          input.form-control(type='date', name='dob', max='3000-12-31', min='1000-01-01')
+        .form-group
+          label(for='std_branch') Branch
+          select#std_branch.form-control
+            option CSE
+            option MECH
+            option CIV
+            option IT
+        .form-group
+          label(for='std_sem') Semester
+          select#std_semester.form-control(required='')
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+            option 6
+        .form-group
+          // List of available subjects in each semester will be display for selection
+        button.btn.btn-primary(type='submit') Register
